@@ -2,6 +2,13 @@
 
 `READ CAREFULLY`
 
+## How to run localhost:
+ - Open the Ambev.DeveloperEvaluation.sln in Visual Studio
+ - Use docker to create a new postgres server: docker run --name postgres -e POSTGRES_PASSWORD=Pass@word -e POSTGRES_USER:sa -e POSTGRES_DB:DeveloperEvaluation -d -p 5432:5432 postgres
+ - To apply all the migrations, cd into the /Ambev.DeveloperEvaluation.WebApi and run the following command: dotnet ef database update --project ../Ambev.DeveloperEvaluation.ORM/
+ - Run the application
+ - After the application starts, create at least one user and one product so you can create a new sale
+
 ## Instructions
 **The test below will have up to 7 calendar days to be delivered from the date of receipt of this manual.**
 
